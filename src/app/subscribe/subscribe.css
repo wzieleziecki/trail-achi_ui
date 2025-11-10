@@ -1,0 +1,122 @@
+/* Importujemy lepszą czcionkę dla nowoczesnego wyglądu */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+/* Style dla całego tła, aby kontener się wyróżniał */
+:host {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f7f9fc; /* Jasnoszary background */
+    font-family: 'Inter', sans-serif;
+}
+
+.container {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    /* Mocniejszy, bardziej subtelny cień */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    max-width: 420px;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* Sekcja nagłówkowa */
+.header-icon {
+    margin-bottom: 20px;
+}
+.mountain-icon {
+    color: #fc4c02; /* Kolor Strava */
+    stroke-width: 2.5;
+}
+
+h1 {
+    color: #333;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.subtitle {
+    color: #666;
+    margin-bottom: 30px;
+    line-height: 1.4;
+    font-size: 0.95rem;
+}
+
+.email-input {
+    padding: 12px 15px;
+    margin-bottom: 5px;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 8px; /* Bardziej zaokrąglone rogi */
+    box-sizing: border-box;
+    font-size: 1rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.email-input:focus {
+    border-color: #fc4c02;
+    box-shadow: 0 0 0 3px rgba(252, 76, 2, 0.1);
+    outline: none;
+}
+
+/* Przycisk CTA (Call to Action) */
+.cta-button {
+    /* Użycie gradientu, aby przycisk był bardziej dynamiczny */
+    background-image: linear-gradient(to right, #fc4c02, #ff6b28);
+    color: white;
+    padding: 15px 25px;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    box-shadow: 0 5px 15px rgba(252, 76, 2, 0.3);
+}
+
+.cta-button:hover:not([disabled]) {
+    /* Lekkie przyciemnienie na hover */
+    background-image: linear-gradient(to right, #e24301, #e6551b);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(252, 76, 2, 0.4);
+}
+
+.cta-button:disabled {
+    background-image: none;
+    background-color: #fca683;
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}
+
+/* Style dla komunikatów */
+.status-message {
+    margin-top: 25px;
+    padding: 15px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-align: left;
+}
+.success {
+    color: #155724;
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+}
+.error {
+    color: #721c24;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+}
+.validation-error {
+    color: #e30000;
+    font-size: 0.85rem;
+    margin-bottom: 15px;
+    text-align: left;
+    font-weight: 400;
+}
