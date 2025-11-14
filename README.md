@@ -57,3 +57,12 @@ Angular CLI does not come with an end-to-end testing framework by default. You c
 ## Additional Resources
 
 For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+
+## Wdrożenie na GitHub Pages
+Repozytorium musi być publiczne 
+```bash
+ng build --configuration production --base-href /trail-achi-ui/
+```
+```bash
+npx ngh --dir=dist/trail-achi-ui/browser
+```
