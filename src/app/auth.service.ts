@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class AuthService {
-    private registerUrl = 'https://xcivf0y0z0.execute-api.eu-north-1.amazonaws.com/prod/trail-achi-auth/register';
+    private registerUrl = 'https://83dfyyrjz6.execute-api.eu-north-1.amazonaws.com/prod/auth/register';
 
     constructor(private http: HttpClient) { }
 
