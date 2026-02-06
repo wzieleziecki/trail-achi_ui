@@ -66,3 +66,6 @@ ng build --configuration production --base-href /trail-achi-ui/
 ```bash
 npx ngh --dir=dist/trail-achi-ui/browser
 ```
+
+ npx ng build --configuration production --base-href /trail-achi_ui/
+ npx ngh --dir=dist/trail-achi-ui/browser                       

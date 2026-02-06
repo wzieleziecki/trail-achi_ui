@@ -1,47 +1,25 @@
-<div class="container">
-  <div class="header-icon">
-    <!-- Ikona dla Trail Achi (wspinaczka/góry) -->
-    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mountain-icon"><path d="m8 3 4 8 5-5 5 15H2L8 3z"/></svg>
-  </div>
-  <h1>Dołącz do Trail Achi!</h1>
-  <p class="subtitle">Otrzymaj ekskluzywny link aktywacyjny, aby połączyć swoje konto Strava i analizować osiągnięcia.</p>
-
-  <!-- Połączenie z registrationForm i wywołanie onSubmit -->
-  <form [formGroup]="registrationForm" (ngSubmit)="onSubmit()" class="form-container">
-
-    <input
-      type="email"
-      formControlName="email"
-      class="email-input"
-      placeholder="Wpisz swój adres e-mail"
-      required
-      [disabled]="loading || registrationForm.disabled"
-    >
-
-    <!-- Wyświetlanie błędu walidacji Angulara -->
-    <div
-      *ngIf="registrationForm.get('email')?.invalid && registrationForm.get('email')?.touched"
-      class="validation-error"
-    >
-            <span *ngIf="registrationForm.get('email')?.errors?.['required']">
-                Adres e-mail jest wymagany.
-            </span>
-      <span *ngIf="registrationForm.get('email')?.errors?.['email']">
-                Wprowadź poprawny format e-mail.
-            </span>
+<div class="page-wrapper">
+  <header class="sticky-header">
+    <div class="header-inner">
+      <span style="font-weight: 800; color: #fc4c02;">Trail Achi</span>
     </div>
+  </header>
 
-    <button
-      type="submit"
-      class="btn cta-button"
-      [disabled]="registrationForm.invalid || loading"
-    >
-      <span *ngIf="!loading">Aktywuj darmowy dostęp</span>
-      <span *ngIf="loading">Wysyłanie...</span>
-    </button>
-  </form>
+  <section id="mapSection" class="map-wrapper">
+    <div id="map"></div>
+  </section>
 
-  <!-- Komunikaty statusu (sukces/błąd z backendu) -->
-  <div *ngIf="successMessage" class="status-message success">{{ successMessage }}</div>
-  <div *ngIf="errorMessage" class="status-message error">{{ errorMessage }}</div>
+  <section id="formSection" class="content-section">
+    <div class="form-card">
+      <div class="card-badge">Krok 2: Aktywacja</div>
+      <h1>Zdobądź paszport</h1>
+
+      <form [formGroup]="registrationForm" (ngSubmit)="onSubmit()">
+        <div class="input-group">
+          <input type="email" formControlName="email" class="email-input" placeholder="Twoja poczta e-mail">
+        </div>
+        <button type="submit" class="cta-button">Otrzymaj zaproszenie</button>
+      </form>
+    </div>
+  </section>
 </div>

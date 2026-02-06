@@ -1,0 +1,429 @@
+[
+  {
+    "json_build_object": {
+      "type": "FeatureCollection",
+      "features": [
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              19.529446,
+              49.573087
+            ]
+          },
+          "properties": {
+            "id": 1,
+            "name": "Babia Góra",
+            "elevation": 1725,
+            "voivodeship": "Małopolskie",
+            "badges": [
+              "Korona Gór Polski",
+              "Górska Odznaka Turystyczna PTTK"
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              19.581809,
+              49.587811
+            ]
+          },
+          "properties": {
+            "id": 2,
+            "name": "Przełęcz Krowiarki",
+            "elevation": 1012,
+            "voivodeship": null,
+            "badges": [
+              "Górska Odznaka Turystyczna PTTK"
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              19.5633,
+              49.584502
+            ]
+          },
+          "properties": {
+            "id": 3,
+            "name": "Sokolica",
+            "elevation": 1367,
+            "voivodeship": null,
+            "badges": [
+              "Górska Odznaka Turystyczna PTTK"
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              17.428761,
+              50.256755
+            ]
+          },
+          "properties": {
+            "id": 4,
+            "name": "Biskupia Kopa",
+            "elevation": 891,
+            "voivodeship": null,
+            "badges": [
+              "Korona Gór Polski",
+              "Górska Odznaka Turystyczna PTTK"
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              17.429767,
+              50.253901
+            ]
+          },
+          "properties": {
+            "id": 5,
+            "name": "Krzyż Pojednania",
+            "elevation": 875,
+            "voivodeship": null,
+            "badges": [
+              "Górska Odznaka Turystyczna PTTK"
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              17.439511,
+              50.251652
+            ]
+          },
+          "properties": {
+            "id": 6,
+            "name": "Przełęcz pod Kopą",
+            "elevation": 724,
+            "voivodeship": null,
+            "badges": [
+              "Górska Odznaka Turystyczna PTTK"
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              17.454647,
+              50.256315
+            ]
+          },
+          "properties": {
+            "id": 7,
+            "name": "Srebrna Kopa",
+            "elevation": 785,
+            "voivodeship": null,
+            "badges": [
+              "Górska Odznaka Turystyczna PTTK"
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              17.431226,
+              50.26301
+            ]
+          },
+          "properties": {
+            "id": 8,
+            "name": "Grzebień",
+            "elevation": 769,
+            "voivodeship": null,
+            "badges": [
+              "Górska Odznaka Turystyczna PTTK"
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              17.431142,
+              50.260647
+            ]
+          },
+          "properties": {
+            "id": 9,
+            "name": "Górski Dom Turysty Pod Biskupią Kopą",
+            "elevation": 765,
+            "voivodeship": null,
+            "badges": [
+              "Górska Odznaka Turystyczna PTTK"
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              17.432071,
+              50.278833
+            ]
+          },
+          "properties": {
+            "id": 10,
+            "name": "Bolkówka",
+            "elevation": 400,
+            "voivodeship": null,
+            "badges": [
+              "Górska Odznaka Turystyczna PTTK"
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              17.444705,
+              50.273808
+            ]
+          },
+          "properties": {
+            "id": 11,
+            "name": "Droga Amalii nad Anusią",
+            "elevation": 500,
+            "voivodeship": null,
+            "badges": [
+              "Górska Odznaka Turystyczna PTTK"
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              17.440848,
+              50.261611
+            ]
+          },
+          "properties": {
+            "id": 12,
+            "name": "Ścieżka Langego",
+            "elevation": 649,
+            "voivodeship": null,
+            "badges": [
+              "Górska Odznaka Turystyczna PTTK"
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              17.445294,
+              50.278405
+            ]
+          },
+          "properties": {
+            "id": 13,
+            "name": "Rozdroże pod Piekiełkiem",
+            "elevation": 474,
+            "voivodeship": null,
+            "badges": [
+              "Górska Odznaka Turystyczna PTTK"
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              17.449522,
+              50.277684
+            ]
+          },
+          "properties": {
+            "id": 14,
+            "name": "Gwarkowa Perć",
+            "elevation": 400,
+            "voivodeship": null,
+            "badges": [
+              "Górska Odznaka Turystyczna PTTK"
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              17.444122,
+              50.279124
+            ]
+          },
+          "properties": {
+            "id": 15,
+            "name": "Piekiełko",
+            "elevation": 484,
+            "voivodeship": null,
+            "badges": [
+              "Górska Odznaka Turystyczna PTTK"
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              17.442856,
+              50.279728
+            ]
+          },
+          "properties": {
+            "id": 16,
+            "name": "Bukowa Góra",
+            "elevation": 506,
+            "voivodeship": null,
+            "badges": [
+              "Górska Odznaka Turystyczna PTTK"
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              17.44998,
+              50.258593
+            ]
+          },
+          "properties": {
+            "id": 17,
+            "name": "Plac Konrada Habla",
+            "elevation": null,
+            "voivodeship": null,
+            "badges": [
+              "Górska Odznaka Turystyczna PTTK"
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              17.457391,
+              50.270643
+            ]
+          },
+          "properties": {
+            "id": 18,
+            "name": "Przełęcz pod Zamkową Górą",
+            "elevation": 508,
+            "voivodeship": null,
+            "badges": [
+              "Górska Odznaka Turystyczna PTTK"
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              17.458812,
+              50.272696
+            ]
+          },
+          "properties": {
+            "id": 19,
+            "name": "Zamkowa Góra",
+            "elevation": 571,
+            "voivodeship": null,
+            "badges": [
+              "Górska Odznaka Turystyczna PTTK"
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              7.460644,
+              50.278309
+            ]
+          },
+          "properties": {
+            "id": 20,
+            "name": "Szyndzielowa Kopa",
+            "elevation": 533,
+            "voivodeship": null,
+            "badges": [
+              "Górska Odznaka Turystyczna PTTK"
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              17.442335,
+              50.278254
+            ]
+          },
+          "properties": {
+            "id": 21,
+            "name": "Przełęcz pod Pasterką",
+            "elevation": 472,
+            "voivodeship": null,
+            "badges": [
+              "Górska Odznaka Turystyczna PTTK"
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              17.430255,
+              50.26924
+            ]
+          },
+          "properties": {
+            "id": 22,
+            "name": "Kijowa Droga",
+            "elevation": 590,
+            "voivodeship": null,
+            "badges": [
+              "Górska Odznaka Turystyczna PTTK"
+            ]
+          }
+        }
+      ]
+    }
+  }
+]

@@ -1,122 +1,108 @@
-/* Importujemy lepszą czcionkę dla nowoczesnego wyglądu */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap');
 
-/* Style dla całego tła, aby kontener się wyróżniał */
 :host {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-color: #f7f9fc; /* Jasnoszary background */
+    display: block;
+    background-color: #f7f9fc;
     font-family: 'Inter', sans-serif;
 }
 
-.container {
+/* NAGŁÓWEK */
+.sticky-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
     background: white;
-    padding: 40px;
-    border-radius: 12px;
-    /* Mocniejszy, bardziej subtelny cień */
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-    max-width: 420px;
+    border-bottom: 1px solid #ddd;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-inner {
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* MAPA - To ją ożywi */
+.map-wrapper {
+    position: relative;
+    width: 100%;
+    height: 500px; /* Stała wysokość, żeby na pewno się pojawiła */
+    margin-top: 70px;
+    background-color: #e5e7eb;
+    z-index: 1;
+}
+
+#map {
+    width: 100%;
+    height: 100%;
+}
+
+/* KARTA FORMULARZA - Koniec z brzydką ramką */
+.content-section {
+    padding: 100px 20px;
+    display: flex;
+    justify-content: center;
+    background: #f7f9fc;
+}
+
+.form-card {
+    background: white;
+    padding: 50px;
+    border-radius: 24px; /* Zaokrąglone rogi */
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1); /* Miękki cień */
+    max-width: 450px;
     width: 100%;
     text-align: center;
-    box-sizing: border-box;
 }
 
-/* Sekcja nagłówkowa */
-.header-icon {
-    margin-bottom: 20px;
-}
-.mountain-icon {
-    color: #fc4c02; /* Kolor Strava */
-    stroke-width: 2.5;
+.card-badge {
+    color: #fc4c02;
+    font-weight: 800;
+    font-size: 0.8rem;
+    margin-bottom: 15px;
 }
 
-h1 {
-    color: #333;
-    font-size: 1.8rem;
-    margin-bottom: 10px;
-    font-weight: 700;
-}
-
-.subtitle {
-    color: #666;
-    margin-bottom: 30px;
-    line-height: 1.4;
-    font-size: 0.95rem;
+/* STYLOWY INPUT */
+.input-group {
+    margin: 25px 0;
 }
 
 .email-input {
-    padding: 12px 15px;
-    margin-bottom: 5px;
     width: 100%;
-    border: 1px solid #ddd;
-    border-radius: 8px; /* Bardziej zaokrąglone rogi */
-    box-sizing: border-box;
+    padding: 15px 20px;
+    border: 2px solid #edf2f7;
+    border-radius: 12px;
     font-size: 1rem;
-    transition: border-color 0.3s, box-shadow 0.3s;
+    box-sizing: border-box; /* Ważne! */
+    transition: border-color 0.3s;
 }
 
 .email-input:focus {
-    border-color: #fc4c02;
-    box-shadow: 0 0 0 3px rgba(252, 76, 2, 0.1);
     outline: none;
+    border-color: #fc4c02;
 }
 
-/* Przycisk CTA (Call to Action) */
+/* PRZYCISK PREMIUM */
 .cta-button {
-    /* Użycie gradientu, aby przycisk był bardziej dynamiczny */
-    background-image: linear-gradient(to right, #fc4c02, #ff6b28);
+    width: 100%;
+    background: #fc4c02;
     color: white;
-    padding: 15px 25px;
-    font-size: 1.1rem;
-    border-radius: 8px;
-    font-weight: 600;
-    transition: all 0.3s ease;
+    padding: 16px;
     border: none;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 1rem;
     cursor: pointer;
-    margin-top: 20px;
-    box-shadow: 0 5px 15px rgba(252, 76, 2, 0.3);
+    transition: background 0.3s;
 }
 
-.cta-button:hover:not([disabled]) {
-    /* Lekkie przyciemnienie na hover */
-    background-image: linear-gradient(to right, #e24301, #e6551b);
-    transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(252, 76, 2, 0.4);
-}
-
-.cta-button:disabled {
-    background-image: none;
-    background-color: #fca683;
-    cursor: not-allowed;
-    box-shadow: none;
-    transform: none;
-}
-
-/* Style dla komunikatów */
-.status-message {
-    margin-top: 25px;
-    padding: 15px;
-    border-radius: 8px;
-    font-weight: 600;
-    font-size: 0.9rem;
-    text-align: left;
-}
-.success {
-    color: #155724;
-    background-color: #d4edda;
-    border: 1px solid #c3e6cb;
-}
-.error {
-    color: #721c24;
-    background-color: #f8d7da;
-    border: 1px solid #f5c6cb;
-}
-.validation-error {
-    color: #e30000;
-    font-size: 0.85rem;
-    margin-bottom: 15px;
-    text-align: left;
-    font-weight: 400;
+.cta-button:hover {
+    background: #e24301;
 }
